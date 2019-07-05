@@ -54,7 +54,7 @@ router.get('/', function (req, res, next) {
 		let arr = info.items[0];
 
 		title = arr.title;
-		duration = (arr.duration / 60).toFixed(2);
+		duration = arr.duration;
 
 		let mp4 = path.join(__dirname, '../public', 'video.mp4')
 		let mp3 = path.join(__dirname, '../public', 'song.mp3')
@@ -68,7 +68,6 @@ router.get('/', function (req, res, next) {
 				let obj = {
 					title: title,
 					duration: duration,
-					link: 'localhost:3000/song.mp3'
 				};
 				console.log(JSON.stringify(obj, null, '\t'));
 				res.json(obj);
