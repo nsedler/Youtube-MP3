@@ -15,7 +15,7 @@
     "googleapis": "^40.0.0",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11",
+    "pug": "3.0.1",
     "simple-youtube-api": "^5.2.1",
     "ytdl-core": "^0.29.2",
     "ytdl-getinfo": "^1.1.0"
